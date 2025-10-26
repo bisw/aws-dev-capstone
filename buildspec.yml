@@ -1,5 +1,9 @@
 version: 0.2
 
+env:
+  variables:
+    COMPOSER_HOME: "/root/.composer"
+
 phases:
   install:
     commands:
