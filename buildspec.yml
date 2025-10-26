@@ -1,18 +1,18 @@
 version: 0.2
 
+env:
+  variables:
+    COMPOSER_HOME: "/root/.composer"
+
 phases:
   install:
     runtime-versions:
-      php: 8.3
+      php: 8.4
     commands:
       - php -v
-      - yum install php-cli
-      - curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
-      - php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
-      - alias composer="/usr/bin/composer"
-      - composer --version
       - echo COMPOSER_MEMORY_LIMIT=-1
       - echo "Installing Composer dependencies..."
+      - alias composer="/usr/bin/composer"
       - composer install
     pre_build:
       commands:
