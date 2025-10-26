@@ -6,7 +6,6 @@ phases:
       php: 8.3
     commands:
       - php -v
-      - composer --version
       - echo COMPOSER_MEMORY_LIMIT=-1
       - echo "Installing Composer dependencies..."
       - composer install
