@@ -23,6 +23,8 @@ phases:
     post_build:
       commands:
         - echo "we are in the post build phase"
+        - rm composer.json
+        - rm composer.lock
 artifacts:
   files:
     - '**/*'
