@@ -8,6 +8,7 @@ phases:
       - php -v
       - echo COMPOSER_MEMORY_LIMIT=-1
       - echo "Installing Composer dependencies..."
+      - alias composer="/usr/bin/composer"
       - composer install
     pre_build:
       commands:
