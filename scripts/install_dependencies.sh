@@ -1,3 +1,3 @@
 #!/bin/bash
-yum install -y httpd
-rm -f /var/www/html/index.html
+apt install apache2
+ufw allow 'Apache'
