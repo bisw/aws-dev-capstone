@@ -2,8 +2,6 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      php: 8.3
     commands:
       - php -v
       - echo COMPOSER_MEMORY_LIMIT=-1
