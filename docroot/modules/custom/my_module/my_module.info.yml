@@ -1,4 +1,4 @@
-name: My Test Module
+name: My Test Module Biswajit
 description: Test Module
 type: module
 core_version_requirement: ^9.5 || ^10 || ^11
