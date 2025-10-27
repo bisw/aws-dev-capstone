@@ -1,4 +1,4 @@
-name: Mt Test Module
+name: My Test Module
 description: Test Module
 type: module
 core_version_requirement: ^9.5 || ^10 || ^11
